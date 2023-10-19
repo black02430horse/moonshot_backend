@@ -15,9 +15,8 @@ export const errorHandlerMiddleware = (
   console.log('111111111111111');
 
   if (error instanceof CustomError) {
-
+    
     if (error instanceof ArgumentValidationError) {
-      console.log('error: ', error);
       res.status(error.errorCode).json({
         message: error.messages,
         reason: error.reasonCode,
