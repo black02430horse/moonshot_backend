@@ -1,0 +1,5 @@
+export const INVALID_CODE = 'INVALID_CODE';
+export const INVALID_EMAIL = 'INVALID_EMAIL';
+
+export const UNKNOW_ERROR = 'UNKNOWN_ERROR';
+export const EXPIRED_CODE = 'EXPIRED_CODE';
