@@ -12,7 +12,6 @@ export const errorHandlerMiddleware = (
   _next: NextFunction
 ) => {
   Logger.log(error);
-  console.log('111111111111111');
 
   if (error instanceof CustomError) {
     

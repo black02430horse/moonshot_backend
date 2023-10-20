@@ -18,7 +18,7 @@ export const errorHandlerWrapper = (
   return async (req: Request, res: Response, next: NextFunction) => {
     try {
       const errors = validationResult(req);
-      console.log(errors);
+      // console.log(errors);
       if (!errors.isEmpty()) {
         throw new ArgumentValidationError(
           'Invalid Arguments',

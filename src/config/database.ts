@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import {
+  BlogEntity,
   // EmailCertificateEntity,
   // AccountEntity,
   // KYCInfoEntity,
@@ -22,12 +23,13 @@ export const dbOptions: DataSourceOptions = {
   logging: false,
   synchronize: false,
   entities: [
-    UserEntity
+    UserEntity,
+    BlogEntity
     // KYCInfoEntity,
     // VerifyEmailEntity,
     // EmailCertificateEntity,
     // AccountEntity,
-    // VerificationEntity,
+        // VerificationEntity,
     // InteractionEntity,
   ],
   extra: {
