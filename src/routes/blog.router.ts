@@ -11,5 +11,24 @@ const blogRouter = express.Router();
     // checkToken,
     blogController.getBlogs,
   );
+  blogRouter.post(
+    '/create-blog',
+    // checkToken,
+    blogController.createBlogValidator(),
+    blogController.createBlog,
+  );
+  blogRouter.post(
+    '/edit-blog/:id',
+    // checkToken,
+    blogController.createBlogValidator(),
+    blogController.editBlog,
+  );
+
+  blogRouter.delete(
+    '/:id',
+    // checkToken,
+    // blogController.createBlogValidator(),
+    blogController.deleteBlog,
+  );
 
 export default blogRouter;
