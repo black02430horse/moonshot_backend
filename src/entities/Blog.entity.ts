@@ -11,6 +11,9 @@ export class BlogEntity extends CoreEntity {
   @Column({ name: 'image' })
   img: string;
 
+  @Column({ name: 'creator' })
+  creator: string;
+
   @Column({ name: 'title' })
   title: string;
 
